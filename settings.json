@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "App Settings",
+    "description": "Here you can provide values for the app settings",
+    "properties": {
+      "stringSetting": {
+        "title": "Name",
+        "type": "string",
+        "minLength": 1
+      },
+      "booleanSetting": {
+        "type": "boolean"
+      },
+      "integerSetting": {
+        "type": "integer",
+        "x-scope": "GLOBAL"
+      },
+      "numberSetting": {
+        "type": "number",
+        "x-scope": "PROJECT"
+      },
+      "secretSetting": {
+        "type": "string",
+        "format": "secret"
+      },
+      "arraySetting": {
+        "type": "array",
+        "items": {
+    "     x-entity": "User",
+          "type": "object"
+        }
+      },
+      "userSetting": {
+        "type": "object",
+        "x-entity": "User"
+      }
+    }
+  }

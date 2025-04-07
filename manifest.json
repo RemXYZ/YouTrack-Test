@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json.schemastore.org/youtrack-app.json",
+    "name": "my-youtrack-app",
+    "title": "My YouTrack App",
+    "description": "A sample YouTrack App with a project list and toggle",
+    "version": "1.0.0",
+    "url": "https://github.com/example/my-youtrack-app",
+    "icon": "icon.svg",
+    "iconDark": "icon-dark.svg",
+    "minYouTrackVersion": "2022.2.0",
+    "maxYouTrackVersion": "2024.2.0",
+    "widgets": [
+      {
+        "key": "main-menu-widget",
+        "name": "Main Menu Widget",
+        "extensionPoint": "MAIN_MENU_ITEM",
+        "indexPath": "widgets/main-menu/index.html",
+        "permissions": ["PROJECT_READ", "ADMIN_WRITE"],
+        "defaultDimensions": { "height": "400px", "width": "100%" }
+      }
+    ]
+  }
+  
